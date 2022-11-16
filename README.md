@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openair-feeds
 
 Summary: Tools to analyse, interpret and understand air pollution data. Data are typically hourly time series and both monitoring data and dispersion model output can be analysed.  Many functions can also be applied to other data, including meteorological and traffic data.
 
+Development: https://github.com/davidcarslaw/openair
+
 Current build status
 ====================
 
@@ -191,5 +193,4 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@mfansler](https://github.com/mfansler/)
 
