@@ -1,4 +1,4 @@
-{% set version = "2.12" %}
+{% set version = "2.13" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/openair_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openair/openair_{{ version }}.tar.gz
-  sha256: 5a9af94216f8fd22749c3d5021061b166b20d23b6a226f80596e216fdce3ead5
+  sha256: 452a0aa1b325b1f4937ac8e4e4a5503367774a10d95a8337ac7f9f8584e5d4b1
 
 build:
   merge_build_host: true  # [win]
