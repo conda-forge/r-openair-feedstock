@@ -1,11 +1,24 @@
+About r-openair-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openair-feedstock/blob/main/LICENSE.txt)
+
 About r-openair
-===============
+---------------
 
 Home: https://davidcarslaw.github.io/openair/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openair-feedstock/blob/main/LICENSE.txt)
+Summary: Tools to analyse, interpret and understand air pollution data. Data are typically hourly time series and both monitoring data and dispersion model output can be analysed.  Many functions can also be applied to other data, including meteorological and traffic data.
+
+Development: https://github.com/davidcarslaw/openair
+About r-openair
+---------------
+
+Home: https://davidcarslaw.github.io/openair/
+
+Package license: GPL-2.0-or-later
 
 Summary: Tools to analyse, interpret and understand air pollution data. Data are typically hourly time series and both monitoring data and dispersion model output can be analysed.  Many functions can also be applied to other data, including meteorological and traffic data.
 
