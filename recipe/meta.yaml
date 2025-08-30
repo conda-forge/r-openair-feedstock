@@ -1,4 +1,4 @@
-{% set version = "2.18-2" %}
+{% set version = "2.19.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/openair_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openair/openair_{{ version }}.tar.gz
-  sha256: 8b20580bc6ab4c4bbe8a8ffb5f55e75e5d6855955b49d6dcb1259436715b84df
+  sha256: fc3e09fee3a1c21ddb5bd3394ff54edb258946eae0a684912a78106cfd5c4332
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
