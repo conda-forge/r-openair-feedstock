@@ -1,4 +1,4 @@
-{% set version = "2.19.0" %}
+{% set version = "3.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,13 +9,17 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/openair_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openair/openair_{{ version }}.tar.gz
-  sha256: fc3e09fee3a1c21ddb5bd3394ff54edb258946eae0a684912a78106cfd5c4332
+  sha256: 217928cfe9d2df77c27a649f486ce65a3fe4b36a575d0019b5aa2f9c8e8ce5a2
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -35,33 +39,33 @@ requirements:
     - r-base
     - r-mass
     - r-rcpp
+    - r-cli
     - r-cluster
-    - r-dplyr >=1.0
-    - r-hexbin
-    - r-lattice
-    - r-latticeextra
+    - r-dplyr >=1.2
+    - r-ggplot2 >=4.0.0
     - r-lubridate
-    - r-mapproj
     - r-mgcv
-    - r-purrr
+    - r-patchwork
+    - r-purrr >=1.0.0
     - r-readr
     - r-rlang
+    - r-scales
     - r-tidyr
   run:
     - r-base
     - r-mass
     - r-rcpp
+    - r-cli
     - r-cluster
-    - r-dplyr >=1.0
-    - r-hexbin
-    - r-lattice
-    - r-latticeextra
+    - r-dplyr >=1.2
+    - r-ggplot2 >=4.0.0
     - r-lubridate
-    - r-mapproj
     - r-mgcv
-    - r-purrr
+    - r-patchwork
+    - r-purrr >=1.0.0
     - r-readr
     - r-rlang
+    - r-scales
     - r-tidyr
 
 test:
@@ -70,14 +74,17 @@ test:
     - "\"%R%\" -e \"library('openair')\""  # [win]
 
 about:
-  home: https://davidcarslaw.github.io/openair/
-  dev_url: https://github.com/davidcarslaw/openair
-  license: GPL-2.0-or-later
-  summary: Tools to analyse, interpret and understand air pollution data. Data are typically hourly time series and both monitoring data and dispersion model output can be analysed.  Many functions can also be applied to other data, including meteorological and traffic data.
-  license_family: GPL2
+  home: https://openair-project.github.io/openair/
+  dev_url: https://github.com/openair-project/openair
+  license: MIT
+  summary: Tools to analyse, interpret and understand air pollution data. Data are typically
+    regular time series and air quality measurement, meteorological data and dispersion
+    model output can be analysed. The package is described in Carslaw and Ropkins (2012,
+    <doi:10.1016/j.envsoft.2011.09.008>) and subsequent papers.
+  license_family: MIT
   license_file:
-    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
-    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 
 extra:
   recipe-maintainers:
