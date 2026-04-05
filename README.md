@@ -7,24 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openair-feeds
 About r-openair
 ---------------
 
-Home: https://davidcarslaw.github.io/openair/
+Home: https://openair-project.github.io/openair/
 
-Package license: GPL-2.0-or-later
+Package license: MIT
 
-Summary: Tools to analyse, interpret and understand air pollution data. Data are typically hourly time series and both monitoring data and dispersion model output can be analysed.  Many functions can also be applied to other data, including meteorological and traffic data.
+Summary: Tools to analyse, interpret and understand air pollution data. Data are typically regular time series and air quality measurement, meteorological data and dispersion model output can be analysed. The package is described in Carslaw and Ropkins (2012, <doi:10.1016/j.envsoft.2011.09.008>) and subsequent papers.
 
-Development: https://github.com/davidcarslaw/openair
+Development: https://github.com/openair-project/openair
 
 About r-openair
 ---------------
 
-Home: https://davidcarslaw.github.io/openair/
+Home: https://openair-project.github.io/openair/
 
-Package license: GPL-2.0-or-later
+Package license: MIT
 
-Summary: Tools to analyse, interpret and understand air pollution data. Data are typically hourly time series and both monitoring data and dispersion model output can be analysed.  Many functions can also be applied to other data, including meteorological and traffic data.
+Summary: Tools to analyse, interpret and understand air pollution data. Data are typically regular time series and air quality measurement, meteorological data and dispersion model output can be analysed. The package is described in Carslaw and Ropkins (2012, <doi:10.1016/j.envsoft.2011.09.008>) and subsequent papers.
 
-Development: https://github.com/davidcarslaw/openair
+Development: https://github.com/openair-project/openair
 
 Current build status
 ====================
