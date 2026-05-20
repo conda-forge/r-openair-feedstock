@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/openair_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openair/openair_{{ version }}.tar.gz
-  sha256: 217928cfe9d2df77c27a649f486ce65a3fe4b36a575d0019b5aa2f9c8e8ce5a2
+  sha256: 4d97e37aac1790591d589687c88088da771f2ed81b6bcd63e1f0edc4909b25cc
 
 build:
   number: 0
@@ -77,10 +77,8 @@ about:
   home: https://openair-project.github.io/openair/
   dev_url: https://github.com/openair-project/openair
   license: MIT
-  summary: Tools to analyse, interpret and understand air pollution data. Data are typically
-    regular time series and air quality measurement, meteorological data and dispersion
-    model output can be analysed. The package is described in Carslaw and Ropkins (2012,
-    <doi:10.1016/j.envsoft.2011.09.008>) and subsequent papers.
+  summary: Tools to analyse, interpret and understand air pollution data. Data are typically regular time series and air quality measurement, meteorological data and dispersion model output can be analysed. The package is described in Carslaw and Ropkins (2012, <doi:10.1016/j.envsoft.2011.09.008>) and subsequent 
+    papers.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
